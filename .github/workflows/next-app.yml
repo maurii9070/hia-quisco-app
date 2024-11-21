@@ -22,4 +22,4 @@ jobs:
             - name: Push Docker Image
               run: |
                   docker login -u maurii9070 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-                  docker push maurii9070/hia-frontend-final:latest
+                  docker push maurii9070/hia-quiosco-app:latest
