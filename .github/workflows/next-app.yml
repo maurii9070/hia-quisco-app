@@ -1,0 +1,25 @@
+name: Build and Deploy Container
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-push:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Configuración inicial
+            - name: checkout
+              uses: actions/checkout@v4
+
+              # Construye la imagen del contenedor
+            - name: build image
+              run: |
+                  docker build . -t maurii9070/hia-quioscoApp:latest
+              # Publica la imagen en DockerHub
+            - name: Push Docker Image
+              run: |
+                  docker login -u maurii9070 -p ${{ secrets.DOCKER_HUB_TOKEN }}
+                  docker push maurii9070/hia-frontend-final:latest
