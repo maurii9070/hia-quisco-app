@@ -17,7 +17,7 @@ jobs:
               # Construye la imagen del contenedor
             - name: build image
               run: |
-                  docker build . -t maurii9070/hia-quioscoApp:latest
+                  docker build . -t maurii9070/hia-quiosco-app:latest
               # Publica la imagen en DockerHub
             - name: Push Docker Image
               run: |
