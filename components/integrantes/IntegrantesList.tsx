@@ -5,6 +5,9 @@ export default async function IntegrantesList() {
 			<ul className="mt-2 space-y-2 ml-2">
 				<li>Velazquez, Mauricio Nehuen.</li>
 				<li>Velazquez, Rocio Alejandra.</li>
+				<li>
+					PRESENTACION TP FINAL
+				</li>
 			</ul>
 		</div>
 	)
