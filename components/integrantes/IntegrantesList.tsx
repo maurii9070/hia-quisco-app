@@ -6,7 +6,7 @@ export default async function IntegrantesList() {
 				<li>Velazquez, Mauricio Nehuen.</li>
 				<li>Velazquez, Rocio Alejandra.</li>
 				<li>
-					PRESENTACION TP FINAL
+					PRESENTACION TP FINAL 2024
 				</li>
 			</ul>
 		</div>
